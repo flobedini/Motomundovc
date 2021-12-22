@@ -122,7 +122,7 @@ div.redes a{
 
 section.contact{
     background-color: rgba(22, 22, 22, 0.171);
-    background-image: url(./Assets/img/Fondos/contactimg.png);
+    background-image: url(/Assets/img/Fondos/contactimg.png);
     margin-top: 76px;
     padding: 30px;
     text-align: center;
