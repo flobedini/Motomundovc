@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+li a:hover{
+    background-color: rgba(151, 151, 151, 0.11);
+}
+
+#navbar{
+    background-color: blue;
+    color: white;
+}
+
+main{
+    padding-bottom: 150px;
+}
+
+section.contenedor1{
+    display: grid;
+    grid-template-areas:
+    "cascos bolsos cubiertas"
+    "cascos indumentaria aceites";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+    margin: 120px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+div.img{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.img a{
+    text-align: center;
+    line-height: 200px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.cascos{
+    grid-area: cascos;
+    background-image: url(../assets/img/cascoimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+}
+.bolsos{
+    grid-area: bolsos;
+    background-image: url(../assets/img/valijaimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+}
+.cubiertas{
+    grid-area: cubiertas;
+    background-image: url(../assets/img/cubiertaimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+}
+.indumentaria{
+    grid-area: indumentaria; 
+    /* opacity: 0.5; */
+    background-image: url(../assets/img/indumentariaimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+}
+.aceites{
+    grid-area: aceites;
+    background-image: url(../assets/img/aceiteimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    display: flex;
+    min-height: 150px;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+p.contacto{
+    font-size: 16px;
+    padding: 10px;
+}
+div.redes{
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+div.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width:767px){
+
+/* Navbar */
+
+    .logo--web{
+        display: none;
+    }
+
+/* Main index*/
+
+    section.contenedor1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 88px;
+        font-size: 16px;
+        margin: 0;
+        padding: 10px;
+    }
+    .img a{
+        text-decoration: none;
+        color: darkblue;
+    }
+    .info{
+        display: none;
+    }
+
+    .cascos{
+        background-size: cover;
+        background-position: top;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+    }
+
+/* Footer */
+
+    footer{
+        display: flex;
+        width: 100%;
+        bottom: 0;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+    }
+    p.contacto{
+        font-size: 16px;
+        padding: 10px;
+    }
+    div.redes{
+        font-size: 16px;
+        padding: 10px;
+    
+    }
+    
+    div.redes a{
+        text-decoration: none;
+        color: white;
+    }
+    
+}
+@media only screen and (min-width:768px){
+    .logo--cel{
+        display: none;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
