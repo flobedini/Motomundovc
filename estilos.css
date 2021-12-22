@@ -25,6 +25,9 @@ main{
     padding-bottom: 150px;
 }
 
+#demo{
+    margin-top: 76px;
+}
 section.contenedor1{
     display: grid;
     grid-template-areas:
@@ -54,7 +57,7 @@ div.img{
 
 .cascos{
     grid-area: cascos;
-    background-image: url(./assets/img/cascoimg.png);
+    background-image: url(./Assets/img/cascoimg.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
