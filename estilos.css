@@ -54,21 +54,21 @@ div.img{
 
 .cascos{
     grid-area: cascos;
-    background-image: url(../assets/img/cascoimg.png);
+    background-image: url(./assets/img/cascoimg.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
 }
 .bolsos{
     grid-area: bolsos;
-    background-image: url(../assets/img/valijaimg.png);
+    background-image: url(./assets/img/valijaimg.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
 }
 .cubiertas{
     grid-area: cubiertas;
-    background-image: url(../assets/img/cubiertaimg.png);
+    background-image: url(./assets/img/cubiertaimg.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
@@ -76,14 +76,14 @@ div.img{
 .indumentaria{
     grid-area: indumentaria; 
     /* opacity: 0.5; */
-    background-image: url(../assets/img/indumentariaimg.png);
+    background-image: url(./assets/img/indumentariaimg.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
 }
 .aceites{
     grid-area: aceites;
-    background-image: url(../assets/img/aceiteimg.png);
+    background-image: url(./assets/img/aceiteimg.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
