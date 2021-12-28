@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Variables inicio */
+
+$color1: white;
+$color2: rgb(0, 0, 0);
+$shadow1: rgba(151, 151, 151, 0.11);
+$shadow2: rgba(151, 151, 151, 0.329);
+
+$letramediana: 20px;
+$letrachica: 16px;
+
+$font: 'Roboto', sans-serif;
+
+
+/* Variables fin */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+li a:hover{
+    background-color: $shadow1;
+}
+
+#navbar{
+    color: $color1;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+#demo{
+    margin-top: 76px;
+}
+
+
+section.contenedor1{
+    display: grid;
+    grid-template-areas:
+    "cascos bolsos cubiertas"
+    "cascos indumentaria aceites";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+    margin: 120px;
+    font-size: $letramediana;
+    font-family: $font;
+}
+
+
+a.img--main{
+    text-align: center;
+    line-height: 200px;
+    color: $color2;
+    text-decoration: none;
+    text-align: center;
+    font-size: $letramediana;
+    border-radius: 10px;
+}
+
+.cascos{
+    grid-area: cascos;
+    background-image: url(./Assets/img/Fondos/cascoimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 $shadow2;
+}
+.bolsos{
+    grid-area: bolsos;
+    background-image: url(./Assets/img/Fondos/valijaimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 $shadow2;
+}
+.cubiertas{
+    grid-area: cubiertas;
+    background-image: url(./Assets/img/Fondos/cubiertaimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 $shadow2;
+}
+.indumentaria{
+    grid-area: indumentaria; 
+    /* opacity: 0.5; */
+    background-image: url(./Assets/img/Fondos/indumentariaimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 $shadow2;
+}
+.aceites{
+    grid-area: aceites;
+    background-image: url(./Assets/img/Fondos/aceiteimg.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 $shadow2;
+}
+
+/* footer */
+
+footer{
+    background-color: $color2;
+    display: flex;
+    min-height: 150px;
+    width: 100%;
+    bottom: 0;
+    color: $color1;
+    text-align: center;
+    flex-direction: column;
+}
+p.contacto{
+    font-size: $letrachica;
+    padding: 10px;
+}
+div.redes{
+    font-size: $letrachica;
+    padding: 10px;
+
+}
+
+div.redes a{
+    text-decoration: none;
+    color: $color1;
+}
+
+
+
+
+@media only screen and (max-width:767px){
+
+/* Navbar */
+
+    .logo--web{
+        display: none;
+    }
+
+/* Main index*/
+
+#demo{
+    display: none;
+}
+
+    section.contenedor1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 88px;
+        font-size: $letrachica;
+        margin: 0;
+        padding: 10px;
+    }
+    a.img--main{
+        text-decoration: none;
+        color: $color2;
+
+    }
+    .info{
+        display: none;
+    }
+
+    .cascos{
+        background-size: cover;
+        background-position: top;
+        box-shadow: 0 4px 8px 0 $shadow2;
+    }
+
+/* Footer */
+
+    footer{
+        display: flex;
+        width: 100%;
+        bottom: 0;
+        color: $color1;
+        text-align: center;
+        flex-direction: column;
+    }
+    p.contacto{
+        font-size: $letrachica;
+        padding: 10px;
+    }
+    div.redes{
+        font-size: $letrachica;
+        padding: 10px;
+    }
+    
+    div.redes a{
+        text-decoration: none;
+        color: $color1;
+    }
+    
+}
+@media only screen and (min-width:768px){
+    .logo--cel{
+        display: none;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
+
+@import "pages/_Contacto";
+@import "pages/Productos"
