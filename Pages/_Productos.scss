@@ -1,7 +1,8 @@
 
 /* Variables inicio */
 
-$font: 'Roboto', sans-serif;
+$font1: 'Roboto', sans-serif;
+$font2: 'Orbitron', sans-serif;
 
 $color1: white;
 $color2: rgb(0, 0, 0);
@@ -16,26 +17,26 @@ $letrachica: 16px;
 
 /* Main productos */
 
-.container--menu{
+div.container--menu{
     width: 100%;
-    max-width: 1200px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 80px;
-}
 
-.container--menu .card{
-    width: 230px;
-    height: 330px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
 }
+    .card{
+        width: 230px;
+        height: 330px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+    }
+
 
 .container--menu .card:hover{
     transform: translateY(-15px);

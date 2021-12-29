@@ -1,5 +1,85 @@
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
+/* Import pages */
+/* Variables inicio */
+/* Variables fin */
+section.contact {
+  background-image: url(../Assets/img/Fondos/contactimg.png);
+  margin-top: 76px;
+  padding: 30px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+div.index-contacto__titulo {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.form-group {
+  color: black;
+}
+
+.btn {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.199);
+  background-color: blue;
+  color: white;
+  width: 150px;
+}
+
+/* Variables inicio */
+/* Variables fin */
+/* Main productos */
+div.container--menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.card {
+  width: 230px;
+  height: 330px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container--menu .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container--menu .card img {
+  height: 160px;
+}
+
+.container--menu .card h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container--menu .card p {
+  padding: 0 1rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container--menu .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #349;
+}
+
 /* Variables inicio */
 /* Variables fin */
 * {
@@ -35,20 +115,13 @@ section.contenedor1 {
   display: grid;
   grid-template-areas: "cascos bolsos cubiertas" "cascos indumentaria aceites";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px 200px;
   gap: 10px;
   margin: 120px;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
 }
 
 a.img--main {
-  text-align: center;
-  line-height: 200px;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
+  min-height: 200px;
   border-radius: 10px;
 }
 
@@ -91,6 +164,28 @@ a.img--main {
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(151, 151, 151, 0.329);
+}
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
 }
 
 /* footer */
@@ -136,23 +231,15 @@ div.redes a {
     flex-direction: column;
     width: 100%;
     min-height: 88px;
-    font-size: 16px;
     margin: 0;
+    margin-top: 70px;
     padding: 10px;
   }
 
-  a.img--main {
-    text-decoration: none;
-    color: black;
-  }
-
-  .info {
-    display: none;
-  }
-
   .cascos {
+    background-image: url(./Assets/img/Fondos/cascochico.png);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     box-shadow: 0 4px 8px 0 rgba(151, 151, 151, 0.329);
   }
 
@@ -189,82 +276,6 @@ div.redes a {
   footer {
     padding: 20px;
   }
-}
-section.contact {
-  background-color: rgba(22, 22, 22, 0.171);
-  background-image: url(./Assets/img/Fondos/contactimg.png);
-  margin-top: 76px;
-  padding: 30px;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-}
-
-.text--contact {
-  font-size: 20px;
-  padding: 20px;
-}
-
-.form--contacto {
-  padding: 20px;
-  margin: 40px 50px 10px 50px;
-  min-height: 400px;
-}
-
-.form-group {
-  color: black;
-}
-
-.btn {
-  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.199);
-}
-
-/* Main productos */
-.container--menu {
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.container--menu .card {
-  width: 230px;
-  height: 330px;
-  border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-  transition: all 0.25s;
-}
-
-.container--menu .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.container--menu .card img {
-  height: 160px;
-}
-
-.container--menu .card h4 {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.container--menu .card p {
-  padding: 0 1rem;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.container--menu .card a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #349;
 }
 
 /*# sourceMappingURL=estilos.css.map */

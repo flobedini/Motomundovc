@@ -1,6 +1,17 @@
+/* Import fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* font-family: 'Roboto', sans-serif; */
+
+
+/* Import pages */
+
+@import "./Pages/Contacto";
+
+@import "./Pages/Productos";
+
+
 
 /* Variables inicio */
 
@@ -12,7 +23,7 @@ $shadow2: rgba(151, 151, 151, 0.329);
 $letramediana: 20px;
 $letrachica: 16px;
 
-$font: 'Roboto', sans-serif;
+$font1: 'Roboto', sans-serif;
 
 
 /* Variables fin */
@@ -21,7 +32,7 @@ $font: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $font;
+    font-family: $font1;
 }
 
 .carousel-inner img {
@@ -53,23 +64,17 @@ section.contenedor1{
     "cascos bolsos cubiertas"
     "cascos indumentaria aceites";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
     gap: 10px;
     margin: 120px;
-    font-size: $letramediana;
-    font-family: $font;
 }
 
 
 a.img--main{
-    text-align: center;
-    line-height: 200px;
-    color: $color2;
-    text-decoration: none;
-    text-align: center;
-    font-size: $letramediana;
+    min-height: 200px;
     border-radius: 10px;
 }
+
 
 .cascos{
     grid-area: cascos;
@@ -106,6 +111,28 @@ a.img--main{
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 $shadow2;
+}
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
 }
 
 /* footer */
@@ -148,31 +175,24 @@ div.redes a{
 
 /* Main index*/
 
-#demo{
-    display: none;
-}
+    #demo{
+        display: none;
+    }
 
     section.contenedor1{
         display: flex;
         flex-direction: column;
         width: 100%;
         min-height: 88px;
-        font-size: $letrachica;
         margin: 0;
+        margin-top: 70px;
         padding: 10px;
-    }
-    a.img--main{
-        text-decoration: none;
-        color: $color2;
-
-    }
-    .info{
-        display: none;
     }
 
     .cascos{
+        background-image: url(./Assets/img/Fondos/cascochico.png);
         background-size: cover;
-        background-position: top;
+        background-position: center;
         box-shadow: 0 4px 8px 0 $shadow2;
     }
 
@@ -210,6 +230,3 @@ div.redes a{
         padding: 20px;
     }
 }
-
-@import "pages/_Contacto";
-@import "pages/Productos"
