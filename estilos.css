@@ -82,6 +82,29 @@ div.container--menu {
 
 /* Variables inicio */
 /* Variables fin */
+/* Variables inicio */
+/* Variables fin */
+section.ofertas {
+  background-color: yellow;
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+section.ofertas .ofer {
+  background-color: #0ce929;
+  height: 200px;
+  border-color: black 5px;
+}
+
+section.forma--pago {
+  background-color: #fa03c5;
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+/* Variables inicio */
+/* Variables fin */
 * {
   margin: 0;
   padding: 0;
@@ -100,6 +123,10 @@ li a:hover {
 
 #navbar {
   color: white;
+}
+
+li.nav-item {
+  padding: 0px 15px 0px 15px;
 }
 
 main {

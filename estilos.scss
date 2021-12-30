@@ -7,11 +7,13 @@
 
 /* Import pages */
 
-@import "./Pages/Contacto";
+@import "./SCSS/Contacto";
 
-@import "./Pages/Productos";
+@import "./SCSS/Productos";
 
+@import "./SCSS/Nosotros";
 
+@import "./SCSS/Ofertas";
 
 /* Variables inicio */
 
@@ -47,6 +49,11 @@ li a:hover{
 #navbar{
     color: $color1;
 }
+
+li.nav-item{
+    padding: 0px 15px 0px 15px;
+}
+
 
 main{
     width: 100%;
