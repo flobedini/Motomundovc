@@ -1,0 +1,49 @@
+
+/* Variables inicio */
+
+$font1: 'Roboto', sans-serif;
+$font2: 'Orbitron', sans-serif;
+
+$color1: white;
+$color2: rgb(0, 0, 0);
+$shadow1: rgba(151, 151, 151, 0.11);
+$shadow2: rgba(151, 151, 151, 0.329);
+
+$letramediana: 20px;
+$letrachica: 16px;
+
+
+/* Variables fin */
+
+section.promociones{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+
+    div.promos{
+        width: 230px;
+        height: 230px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+    }
+    div.promo1{
+        background-image: url(../Assets/img/Fondos/Promo1.png);
+        background-size: cover;
+        background-position: center;
+    
+    }
+}
+
+
+section.forma--pago{
+    background-color: rgb(250, 3, 197);
+    display: flex;
+    width: 100%;
+    height: 400px;
+}

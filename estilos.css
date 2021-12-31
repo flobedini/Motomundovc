@@ -84,16 +84,27 @@ div.container--menu {
 /* Variables fin */
 /* Variables inicio */
 /* Variables fin */
-section.ofertas {
-  background-color: yellow;
-  display: flex;
+section.promociones {
   width: 100%;
-  height: 400px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
 }
-section.ofertas .ofer {
-  background-color: #0ce929;
-  height: 200px;
-  border-color: black 5px;
+section.promociones div.promos {
+  width: 230px;
+  height: 230px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+}
+section.promociones div.promo1 {
+  background-image: url(../Assets/img/Fondos/Promo1.png);
+  background-size: cover;
+  background-position: center;
 }
 
 section.forma--pago {
