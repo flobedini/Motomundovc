@@ -7,6 +7,8 @@
 
 /* Import pages */
 
+@import "./SCSS/Variables";
+
 @import "./SCSS/Contacto";
 
 @import "./SCSS/Productos";
@@ -15,21 +17,6 @@
 
 @import "./SCSS/Promos";
 
-/* Variables inicio */
-
-$color1: white;
-$color2: rgb(0, 0, 0);
-$shadow1: rgba(151, 151, 151, 0.11);
-$shadow2: rgba(151, 151, 151, 0.329);
-
-$letramediana: 20px;
-$letrachica: 16px;
-
-$font1: 'Roboto', sans-serif;
-
-
-
-/* Variables fin */
 
 *{
     margin: 0;
@@ -156,11 +143,11 @@ footer{
     flex-direction: column;
 }
 p.contacto{
-    font-size: $letrachica;
+    font-size: $size3;
     padding: 10px;
 }
 div.redes{
-    font-size: $letrachica;
+    font-size: $size3;
     padding: 10px;
 
 }
@@ -215,11 +202,11 @@ div.redes a{
         flex-direction: column;
     }
     p.contacto{
-        font-size: $letrachica;
+        font-size: $size3;
         padding: 10px;
     }
     div.redes{
-        font-size: $letrachica;
+        font-size: $size3;
         padding: 10px;
     }
     

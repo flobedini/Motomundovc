@@ -1,19 +1,5 @@
 
-/* Variables inicio */
-
-$font1: 'Roboto', sans-serif;
-$font2: 'Orbitron', sans-serif;
-
-$color1: white;
-$color2: rgb(0, 0, 0);
-$shadow1: rgba(151, 151, 151, 0.11);
-$shadow2: rgba(151, 151, 151, 0.329);
-
-$letramediana: 20px;
-$letrachica: 16px;
-
-
-/* Variables fin */
+@import "./Variables";
 
 /* Main productos */
 
@@ -49,7 +35,7 @@ div.container--menu{
 
 .container--menu .card h4{
     font-weight: 600;
-    font-size: $letramediana;
+    font-size: $size5;
 }
 
 .container--menu .card p{
