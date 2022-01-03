@@ -27,7 +27,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 section.contact {
-  background-image: url(../Assets/img/Fondos/contactimg.png);
+  background-image: url(/Assets/img/Fondos/contactimg.png);
   margin-top: 76px;
   padding: 30px;
   text-align: center;
@@ -201,19 +201,19 @@ div.container--menu {
 }
 
 .card1 {
-  background-image: url(../Assets/img/Fondos//promo1.jpg);
+  background-image: url(../Assets/img/Fondos/promo1.png);
   background-size: cover;
   border-radius: 8px;
 }
 
 .card2 {
-  background-image: url(../Assets/img/Fondos/Promo2.png);
+  background-image: url(../Assets/img/Fondos/promo2.png);
   background-size: cover;
   border-radius: 8px;
 }
 
 .card3 {
-  background-image: url(../Assets/img/Fondos/Promo3.png);
+  background-image: url(../Assets/img/Fondos/promo3.png);
   background-size: cover;
   border-radius: 8px;
 }
@@ -247,17 +247,17 @@ section.forma--pago div.pago {
   text-align: center;
 }
 section.forma--pago div.pagos1 {
-  background-image: url(../Assets/img/Fondos/Pagos1.jpg);
+  background-image: url(/Assets/img/Fondos/promo1.png);
   background-size: cover;
   background-position: center;
 }
 section.forma--pago div.pagos2 {
-  background-image: url(../Assets/img/Fondos/Pagos2.jpg);
+  background-image: url(../Assets/img/Fondos/pagos2.jpg);
   background-size: cover;
   background-position: center;
 }
 section.forma--pago div.pagos3 {
-  background-image: url(../Assets/img/Fondos/Pagos3.png);
+  background-image: url(../Assets/img/Fondos/pagos3.png);
   background-size: cover;
   background-position: center;
 }
