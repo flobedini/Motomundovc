@@ -201,7 +201,7 @@ div.container--menu {
 }
 
 .card1 {
-  background-image: url(../Assets/img/Fondos/Promo1.png);
+  background-image: url(/Assets/img/Fondos/Promo1.png);
   background-size: cover;
   border-radius: 8px;
 }
