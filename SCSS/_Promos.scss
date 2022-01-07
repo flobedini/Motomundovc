@@ -3,111 +3,80 @@
 
 /* Section Promociones */
 
-
-.wrap{
-	margin: 80px auto;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-    flex-wrap: wrap;
+section.container--promos{
+	margin-top: 80px;
 }
 
-.tarjeta-wrap{
-	margin: 40px;
-	-webkit-perspective: 800;
-	perspective: 800;
-}
 
-.tarjeta{
-	width: 250px;
-	height: 250px;
+.card__promo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: $color1;
+    margin: 0 auto;
     border-radius: 8px;
-	position: relative;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transition: .7s ease;
-	transition: .7s ease;
-	-webkit-box-shadow: $shadow3;
-	box-shadow: $shadow3;
+    box-shadow: $shadow3;
+    margin: 3rem;
 }
 
-.adelante, .atras{
-	width: $var1;
-	height: $var1;
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.adelante{
-	width: $var1;
-}
-
-.atras{
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-	padding: 15px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	text-align: center;
-	color: $color2;
-	font-family: $font1;
-}
-
-.tarjeta-wrap:hover .tarjeta{
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
-
-.card1{
-	background-image: url(../Assets/img/Fondos/promo1.png);
-	background-size: cover;
+.card__promo:before,
+.card__promo:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $var1;
+    height: $var1;
     border-radius: 8px;
-}
+    background: $color1;
+    transition: 0.5s;
+    z-index: -1;
 
-.card2{
-	background-image: url(../Assets/img/Fondos/promo2.png);
-	background-size: cover;
-    border-radius: 8px;
-}
-
-.card3{
-	background-image: url(../Assets/img/Fondos/promo3.png);
-	background-size: cover;
-    border-radius: 8px;
-}
-
-img.proms{
-	height: 250px;
-	border-radius: 8px;
 }
 
 
 
-@media only screen and (max-width:767px){
+.card__promo .img__promo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    background: $color1;
+    transition: 0.5s;
+    z-index: 1;
 
-    .tarjeta-wrap{
-        margin: 30px;
-    }
 }
+
+.card__promo:hover .img__promo {
+    bottom: 5rem;
+
+}
+
+.card__promo .img__promo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__promo .details {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+}
+
+.card__promo .details p {
+    margin: 0;
+    padding: 0;
+    font-size: $size3;
+    color: $color2;
+}
+
 
 
 /* Section Formas de pago */
