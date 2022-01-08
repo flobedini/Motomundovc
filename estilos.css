@@ -118,6 +118,10 @@ div.container--menu {
 /*bordes*/
 /*tamaños*/
 /* Variables fin */
+h1 {
+  color: chartreuse;
+}
+
 /* Import fonts */
 /* font-family: 'Roboto', sans-serif; */
 /* Variables inicio */
@@ -222,6 +226,24 @@ section.forma--pago div.pago {
 
 img.pays {
   height: 230px;
+}
+
+div.pago.pagos1 {
+  background-image: url(../Assets/img/promos/pagos1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+div.pago.pagos2 {
+  background-image: url(../Assets/img/promos/pagos2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+div.pago.pagos3 {
+  background-image: url(../Assets/img/promos/pagos3.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 * {
