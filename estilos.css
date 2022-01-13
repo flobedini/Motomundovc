@@ -5,7 +5,9 @@
 /* Import pages */
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
 /*paleta de colores*/
@@ -15,7 +17,9 @@
 /* Variables fin */
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
 /*paleta de colores*/
@@ -24,10 +28,21 @@
 /*tamaños*/
 /* Variables fin */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
+h2.text--contact {
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+  margin-left: 40px;
+}
+
 section.contact {
-  background-image: url(../Assets/img/contactimg.jpg);
+  background-image: url(../Assets/contactimg.png);
   margin-top: 76px;
   padding: 30px;
   text-align: center;
@@ -53,8 +68,16 @@ div.index-contacto__titulo {
   width: 150px;
 }
 
+@media only screen and (max-width: 767px) {
+  iframe.map {
+    justify-content: center;
+    padding: 10px;
+    margin-left: -20px;
+  }
+}
 /* Import fonts */
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
 /*paleta de colores*/
@@ -111,6 +134,7 @@ div.container--menu {
 
 /* Import fonts */
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
 /*paleta de colores*/
@@ -118,12 +142,37 @@ div.container--menu {
 /*bordes*/
 /*tamaños*/
 /* Variables fin */
-h1 {
-  color: chartreuse;
+h2.nosotros--title {
+  font-family: "Orbitron", sans-serif;
+}
+
+section.sobre--nosotros {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 800px;
+}
+
+div.section--nosotros {
+  margin: 20px;
+}
+
+div.nosotros__texto {
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+img.img-fluid {
+  border-radius: 8px;
+}
+
+p.texto__bold {
+  font-weight: bold;
 }
 
 /* Import fonts */
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
 /*paleta de colores*/
@@ -204,7 +253,7 @@ section.container--promos {
 h2.forma--pago__titulo {
   font-size: 24px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 section.forma--pago {
@@ -228,30 +277,16 @@ img.pays {
   height: 230px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-li a:hover {
-  background-color: rgba(151, 151, 151, 0.11);
-}
-
-#navbar {
-  color: white;
-}
-
-li.nav-item {
-  padding: 0px 15px 0px 15px;
-}
-
+/* Import fonts */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+/* Variables inicio */
+/* Fuentes */
+/*paleta de colores*/
+/*sombras*/
+/*bordes*/
+/*tamaños*/
+/* Variables fin */
 main {
   width: 100%;
   height: 100%;
@@ -259,6 +294,11 @@ main {
 
 #demo {
   margin-top: 76px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
 }
 
 section.contenedor1 {
@@ -332,13 +372,112 @@ a.img--main {
   z-index: 100;
 }
 
+/* Comentarios clientes */
+h2.comentarios__clientes {
+  font-family: "Orbitron", sans-serif;
+  font-style: bold;
+}
+
+.index-reviews {
+  margin: 1rem;
+  margin-top: -5rem;
+  text-align: center;
+}
+.index-reviews h2 {
+  padding: 2rem;
+}
+.index-reviews .index-reviews__card {
+  padding: 3rem;
+  transition: 0.5s;
+  background-color: black;
+  margin: 1rem;
+  border-radius: 8px;
+}
+.index-reviews .index-reviews__card:hover {
+  box-shadow: #0103f6 0px 0px 0px 2px, #0103f6 0px 4px 6px -1px, #0103f6 0px 1px 0px inset;
+}
+.index-reviews .index-reviews__card h2.cliente {
+  color: #0103f6;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+  transition: color 0.45s ease;
+  text-transform: uppercase;
+  transition: color 0.45s ease;
+  border-top: 1px solid #585858;
+  padding: 1rem;
+}
+.index-reviews .index-reviews__card p.comentario {
+  color: white;
+  line-height: 1.8;
+}
+.index-reviews .index-reviews__card .card__icon i {
+  color: white;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Main index*/
+  #demo {
+    display: none;
+  }
+
+  section.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 88px;
+    margin: 0;
+    margin-top: 70px;
+    padding: 10px;
+  }
+
+  .cascos {
+    background-image: url(./Assets/img/Fondos/cascochico.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(151, 151, 151, 0.329);
+  }
+
+  h2.comentarios__clientes {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+
+  h2.cliente {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+li a:hover {
+  background-color: rgba(151, 151, 151, 0.11);
+}
+
+#navbar {
+  color: white;
+}
+
+li.nav-item {
+  padding: 0px 15px 0px 15px;
+}
+
+/* Boton whatsapp */
 .btn-wsp:hover {
   text-decoration: none;
   color: #0df053;
   background: #fff;
 }
 
-/* footer */
+/* Footer */
 footer {
   background-color: black;
   display: flex;
@@ -365,59 +504,6 @@ div.redes a {
   color: white;
 }
 
-@media only screen and (max-width: 767px) {
-  /* Navbar */
-  .logo--web {
-    display: none;
-  }
-
-  /* Main index*/
-  #demo {
-    display: none;
-  }
-
-  section.contenedor1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 88px;
-    margin: 0;
-    margin-top: 70px;
-    padding: 10px;
-  }
-
-  .cascos {
-    background-image: url(./Assets/img/Fondos/cascochico.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 rgba(151, 151, 151, 0.329);
-  }
-
-  /* Footer */
-  footer {
-    display: flex;
-    width: 100%;
-    bottom: 0;
-    color: white;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  p.contacto {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  div.redes {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  div.redes a {
-    text-decoration: none;
-    color: white;
-  }
-}
 @media only screen and (min-width: 768px) {
   .logo--cel {
     display: none;
@@ -425,6 +511,12 @@ div.redes a {
 
   footer {
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* Navbar */
+  .logo--web {
+    display: none;
   }
 }
 

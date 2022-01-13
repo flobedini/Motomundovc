@@ -1,6 +1,12 @@
 
 @import "./Variables";
 
+h2.text--contact{
+    font-family: $font2;
+    font-size: $size6;
+    margin-left: 40px;
+}
+
 section.contact{
     background-image: url(../Assets/img/contactimg.jpg);
     margin-top: 76px;
@@ -10,14 +16,12 @@ section.contact{
     background-position: center;
 }
 
-
 div.index-contacto__titulo{
     font-size: $size5;
     padding: 20px;
     text-align: center;
     align-items: center;
 }
-
 
 
 
@@ -31,6 +35,17 @@ div.index-contacto__titulo{
     color: $color1;
     width: 150px;
 }
+
+@media only screen and (max-width:767px){
+    
+
+    iframe.map{
+        justify-content: center;
+        padding: 10px;
+        margin-left: -20px;
+    }
+    
+    }
 
 
 

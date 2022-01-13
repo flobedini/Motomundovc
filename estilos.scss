@@ -7,15 +7,18 @@
 
 /* Import pages */
 
-@import "./SCSS/Variables";
 
-@import "./SCSS/Contacto";
+@import "./scss/variables";
 
-@import "./SCSS/Productos";
+@import "./scss/contacto";
 
-@import "./SCSS/Nosotros";
+@import "./scss/productos";
 
-@import "./SCSS/Promos";
+@import "./scss/nosotros";
+
+@import "./scss/promos";
+
+@import "./scss/index";
 
 
 *{
@@ -25,15 +28,11 @@
     font-family: $font1;
 }
 
-.carousel-inner img {
-    width: $var1;
-    height: $var1;
-}
+/* Navbar */
 
 li a:hover{
     background-color: $shadow1;
 }
-
 
 #navbar{
     color: $color1;
@@ -43,87 +42,7 @@ li.nav-item{
     padding: 0px 15px 0px 15px;
 }
 
-
-main{
-    width: $var1;
-    height: $var1;
-}
-
-#demo{
-    margin-top: 76px;
-}
-
-
-section.contenedor1{
-    display: grid;
-    grid-template-areas:
-    "cascos bolsos cubiertas"
-    "cascos indumentaria aceites";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    gap: 10px;
-    margin: 120px;
-}
-
-
-a.img--main{
-    min-height: 200px;
-    border-radius: 10px;
-}
-
-
-.cascos{
-    grid-area: cascos;
-    background-image: url(./Assets/img/Fondos/cascoimg.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 $shadow2;
-}
-.bolsos{
-    grid-area: bolsos;
-    background-image: url(./Assets/img/Fondos/valijaimg.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 $shadow2;
-}
-.cubiertas{
-    grid-area: cubiertas;
-    background-image: url(./Assets/img/Fondos/cubiertaimg.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 $shadow2;
-}
-.indumentaria{
-    grid-area: indumentaria; 
-    /* opacity: 0.5; */
-    background-image: url(./Assets/img/Fondos/indumentariaimg.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 $shadow2;
-}
-.aceites{
-    grid-area: aceites;
-    background-image: url(./Assets/img/Fondos/aceiteimg.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 $shadow2;
-}
-
-.btn-wsp{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    bottom: 30px;
-    right: 30px;
-    background: #0df053;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index: 100;
-}
+/* Boton whatsapp */
 
 .btn-wsp:hover{
     text-decoration: none;
@@ -131,7 +50,7 @@ a.img--main{
     background: #fff;
 }
 
-/* footer */
+/* Footer */
 
 footer{
     background-color: $color2;
@@ -153,13 +72,21 @@ div.redes{
 
 }
 
-
 div.redes a{
     text-decoration: none;
     color: $color1;
 }
 
 
+@media only screen and (min-width:768px){
+.logo--cel{
+    display: none;
+}
+
+footer{
+    padding: 20px;
+}
+}
 
 
 @media only screen and (max-width:767px){
@@ -168,63 +95,5 @@ div.redes a{
 
     .logo--web{
         display: none;
-    }
-
-/* Main index*/
-
-    #demo{
-        display: none;
-    }
-
-    section.contenedor1{
-        display: flex;
-        flex-direction: column;
-        width: $var1;
-        min-height: 88px;
-        margin: 0;
-        margin-top: 70px;
-        padding: 10px;
-    }
-
-    .cascos{
-        background-image: url(./Assets/img/Fondos/cascochico.png);
-        background-size: cover;
-        background-position: center;
-        box-shadow: 0 4px 8px 0 $shadow2;
-    }
-
-/* Footer */
-
-    footer{
-        display: flex;
-        width: $var1;
-        bottom: 0;
-        color: $color1;
-        text-align: center;
-        flex-direction: column;
-    }
-    p.contacto{
-        font-size: $size3;
-        padding: 10px;
-    }
-    div.redes{
-        font-size: $size3;
-        padding: 10px;
-    }
-    
-    
-    div.redes a{
-        text-decoration: none;
-        color: $color1;
-    }
-    
-}
-@media only screen and (min-width:768px){
-    .logo--cel{
-        display: none;
-    }
-
-    footer{
-        padding: 20px;
     }
 }
