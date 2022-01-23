@@ -43,7 +43,7 @@ h2.text--contact {
 }
 
 section.contact {
-  background-image: url(https://github.com/flobedini/Motomundo/blob/6d9ec08e7208be169a39b18cb9be1a4afcb8de85/Assets/img/Fondos/fondocontacto.png);
+  background-image: url(../Assets/img/fondocontacto.png);
   margin-top: 76px;
   padding: 30px;
   text-align: center;
