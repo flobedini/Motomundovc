@@ -10,10 +10,10 @@
 /* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
+/*tamaños*/
 /*paleta de colores*/
 /*sombras*/
 /*bordes*/
-/*tamaños*/
 /* Variables fin */
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -22,10 +22,10 @@
 /* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
+/*tamaños*/
 /*paleta de colores*/
 /*sombras*/
 /*bordes*/
-/*tamaños*/
 /* Variables fin */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&display=swap");
@@ -38,11 +38,12 @@
 h2.text--contact {
   font-family: "Orbitron", sans-serif;
   font-size: 24px;
+  text-align: center;
   margin-left: 40px;
 }
 
 section.contact {
-  background-image: url(../Assets/contactimg.png);
+  background-image: url(../Assets/img/fondos/fondocontacto.png);
   margin-top: 76px;
   padding: 30px;
   text-align: center;
@@ -68,11 +69,38 @@ div.index-contacto__titulo {
   width: 150px;
 }
 
+section.como--llegar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0 30px 0;
+}
+
+a.como--llegar__link {
+  align-items: center;
+  color: #0103f6;
+}
+
+h3.como--llegar__title {
+  font-size: 14px;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 767px) {
   iframe.map {
-    justify-content: center;
-    padding: 10px;
-    margin-left: -20px;
+    display: none;
+  }
+
+  h2.text--contact {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.como--llegar {
+    display: none;
   }
 }
 /* Import fonts */
@@ -80,10 +108,10 @@ div.index-contacto__titulo {
 /* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
+/*tamaños*/
 /*paleta de colores*/
 /*sombras*/
 /*bordes*/
-/*tamaños*/
 /* Variables fin */
 /* Main productos */
 div.container--menu {
@@ -137,10 +165,10 @@ div.container--menu {
 /* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
+/*tamaños*/
 /*paleta de colores*/
 /*sombras*/
 /*bordes*/
-/*tamaños*/
 /* Variables fin */
 h2.nosotros--title {
   font-family: "Orbitron", sans-serif;
@@ -175,10 +203,10 @@ p.texto__bold {
 /* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
+/*tamaños*/
 /*paleta de colores*/
 /*sombras*/
 /*bordes*/
-/*tamaños*/
 /* Variables fin */
 /* Section Promociones */
 section.container--promos {
@@ -282,10 +310,10 @@ img.pays {
 /* font-family: 'Orbitron', sans-serif; */
 /* Variables inicio */
 /* Fuentes */
+/*tamaños*/
 /*paleta de colores*/
 /*sombras*/
 /*bordes*/
-/*tamaños*/
 /* Variables fin */
 main {
   width: 100%;
@@ -341,7 +369,6 @@ a.img--main {
 
 .indumentaria {
   grid-area: indumentaria;
-  /* opacity: 0.5; */
   background-image: url(./Assets/img/Fondos/indumentariaimg.png);
   background-size: cover;
   background-position: center;
@@ -460,6 +487,7 @@ h2.comentarios__clientes {
 /* Navbar */
 li a:hover {
   background-color: rgba(151, 151, 151, 0.11);
+  border-radius: 8px;
 }
 
 #navbar {

@@ -8,17 +8,17 @@
 /* Import pages */
 
 
-@import "./scss/variables";
+@import "./SCSS/variables";
 
-@import "./scss/contacto";
+@import "./SCSS/contacto";
 
-@import "./scss/productos";
+@import "./SCSS/productos";
 
-@import "./scss/nosotros";
+@import "./SCSS/nosotros";
 
-@import "./scss/promos";
+@import "./SCSS/Promos";
 
-@import "./scss/index";
+@import "./SCSS/index";
 
 
 *{
@@ -32,6 +32,7 @@
 
 li a:hover{
     background-color: $shadow1;
+    border-radius: 8px;
 }
 
 #navbar{
