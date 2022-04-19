@@ -8,18 +8,21 @@
 /* Import pages */
 
 
-@import "./SCSS/variables";
+@import "./scss/variables";
 
-@import "./SCSS/contacto";
+@import "./scss/contacto";
 
-@import "./SCSS/productos";
+@import "./scss/productos";
 
-@import "./SCSS/nosotros";
+@import "./scss/promos";
 
-@import "./SCSS/Promos";
+@import "./scss/index";
 
-@import "./SCSS/index";
+@import "./scss/tienda";
 
+@import "./scss/carrito";
+
+@import "./scss/ingresodatos";
 
 *{
     margin: 0;
@@ -37,6 +40,7 @@ li a:hover{
 
 #navbar{
     color: $color1;
+    z-index: 3;
 }
 
 li.nav-item{

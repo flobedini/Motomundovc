@@ -1,0 +1,232 @@
+@import "./Variables";
+
+
+/* Alert no hay productos*/
+
+/* .noHayProductos{
+    position: fixed;
+    z-index: 9000;
+    top: 0rem;
+    right: 10%;
+    width: 32rem;
+    height: 5rem;
+    background-color: rgb(252, 243, 228);
+    border: 4px solid #41260f;
+    filter: drop-shadow(.5px .5px 2px rgb(255, 255, 255) );
+    padding:  1rem;
+    border-radius:15px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+
+}
+
+.noHayProductos-active{
+    position: fixed;
+    top: 6.5rem;
+    z-index: 9000;
+    right: 10%;
+    width: 32rem;
+    height: 5rem;
+    background-color: rgb(252, 243, 228);
+    border: 6px solid #41260f;
+    filter: drop-shadow(.5px .5px 2px rgb(255, 255, 255) );
+    border: 2px solid ;
+    padding: 1.2rem 1rem;
+    border-radius:15px;
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+.noHayProductos p{
+    font-size: 1.8rem;
+    color: #41260f;
+    font-weight: bold;
+}
+ */
+
+div.container__carrito{
+    margin-top: 50px;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5rem;
+    position: relative;
+    background-image: url(../tienda/imgtienda/carrito/fondocarrito.png);
+    background-size: cover;
+}
+
+.carrito__compras{
+    border: 4px solid $color3;
+    color: $color5;
+    height:500px;
+    width: 650px;
+    overflow: auto;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 0 1rem black;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgba(255, 251, 244, 0.525);
+}
+
+.carrito__vacio--container{
+    position: absolute;
+    width: 100%;
+    top: 47%;
+}
+
+.carrito__compras::-webkit-scrollbar{
+    display: none;
+}
+
+i.carrito__vacio--icon{
+    font-size: 100px;
+    padding: 30px;
+    margin-top: -130px;
+}
+
+.info__text p{
+    font-size: 25px;
+    font-family: $font2;
+}
+
+.info__text--secundario p{
+    font-size: 18px;
+    font-family: $font1;
+}
+
+/* resumen */
+
+.container__resumen{
+    width: 30%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumen{
+    background-color: rgba(255, 251, 244, 0.525);
+    box-shadow: 0 0 1rem black;
+    border: 4px solid $color3;
+    color:$color2;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    flex-wrap: wrap;
+}
+
+.resumen__title p{
+    font-size: 25px;
+    padding:1.2rem;
+    text-align: center;
+    font-family: $font2;
+    margin-top: 10px;
+}
+
+.line{
+    width: 90%;
+    border: 2px solid $color3;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+span{
+    color:#000000;
+}
+
+.text_total{
+    font-size: 25px;
+    padding:1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.precio{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right: 2%;
+    padding: 0 2rem;
+}
+
+
+/* Botones */
+
+.siguiente{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.button-29 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff3e4;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.199);
+    color: $color2;
+    font-weight: 700;
+    cursor: pointer;
+    height: 42px;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.vaciar{
+    width: 12rem;
+    background-color: $color1;
+    color: $color2;
+}
+
+.comprar{
+    width: 12rem;
+    background-color: $color3;
+    color: white;
+}
+
+.button-29:focus {
+    box-shadow: #dee1ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #aeb7ff 0 -3px 0 inset;
+}
+
+.button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #a2adff 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-29:active {
+    transform: translateY(2px);
+}
+
+.carrito__productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.carrito__productos{
+    display: none;
+}
+
