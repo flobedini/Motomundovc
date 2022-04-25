@@ -1,4 +1,4 @@
-export {tienda}
+/* export {tienda}
 
 class tienda{
     constructor(id, tipo, marca, sector, img, precio){
@@ -9,4 +9,4 @@ class tienda{
         this.img = img;
         this.precio = precio;
     }
-}
+} */

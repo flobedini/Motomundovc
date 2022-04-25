@@ -3,49 +3,47 @@
 
 /* Main productos */
 
-div.container--menu{
+section#container--productos{
     width: $var1;
     height: $var1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
-    
+    margin-top: 100px;
 
 }
     .card{
-        width: 230px;
-        height: 330px;
+        max-width: 230px;
+        height: auto;
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        margin: 20px;
         text-align: center;
         transition: all 0.25s;
+        margin: 20px 20px 30px;
     }
 
-
-.container--menu .card:hover{
+#container--productos .card:hover{
     transform: translateY(-5px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container--menu .card img{
+#container--productos .card img{
     height: 160px;
 }
 
-.container--menu .card h4{
+#container--productos .card h4{
     font-weight: 600;
     font-size: $size5;
 }
 
-.container--menu .card p{
-    padding: 0 1rem;
+#container--productos .card p{
     font-size: 14px;
     font-weight: 300;
+    line-height: 0.8;
 }
 
-.container--menu .card a{
+#container--productos .card a{
     font-weight: 500;
     text-decoration: none;
     color: #349;
@@ -53,16 +51,16 @@ div.container--menu{
 
 button.agregar__prod{
     width: 70%;
-    height: 30px;
-    background-color: $color3;
+    height: 35px;
+    background-color: rgba(5, 5, 223, 0.742);
     color: $color1;
     border-radius: 50px;
-    border-color: $color3;
+    border-color: rgba(5, 5, 223, 0.742);
     display: flex;
     align-items: center;
     align-self: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.199);
 }
 
@@ -72,4 +70,6 @@ button.agregar__prod{
     margin: 7px;
     margin-left: 35px;
 }
+
+
 

@@ -47,20 +47,23 @@
               <li class="nav-item">
                 <a class="nav-link text-dark" href="./Contacto.html">Contacto</a>
               </li>
-              <a href="./carrito.html">
-                <div class="carrito">
-                  <i class="fas fa-bag-shopping"></i>
-                  <div class="contador">
-                    <p>0</p>
-                  </div>
-                </div>
-              </a>
+              <button id="boton-carrito">
+                <i class="fas fa-bag-shopping"></i>
+                <span id="contadorCarrito">0</span>
+              </button>
             </ul>
           </div>  
       </nav>
   </header>
 
   <main>
+
+    <div class="popup__vacio">
+      <p>Agregue un producto para continuar</p>
+    </div>
+
+  <!-- carrito inicio -->
+
     <div class="noHayProductos">
       <p>Agregue un producto para continuar</p>
   </div>
@@ -86,7 +89,7 @@
               </div>
               <div class="line"></div>
               <div class="total">
-                  <p class="text_total"> TOTAL: <span class="precio"> $ 0,00</span></p>
+                  <p class="text_total"> TOTAL: <span id="precioTotal"> $ 0,00</span></p>
               </div>
           </div>
 
@@ -96,6 +99,11 @@
           </div>
       </div>
   </div>
+
+  <!-- Carrito Final -->
+
+  <!-- Forms inicio -->
+
   <section class=" section2 container__form" id="section2">
     <form id="ingresar--datos" name="datos" action="./finalizarcompra.html" >
         <div class="input-field primer--dato">
@@ -185,6 +193,9 @@
       </div>
     </form>
   </section>
+
+<!-- Forms final -->
+
     <a href="https://api.whatsapp.com/send?phone=+5493400504701" class="btn-wsp" target="_blank">
     </i><i class="fab fa-whatsapp"></i></a>
 
@@ -221,10 +232,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
-    <script src="./index.js"></script>
-    <script src="./tienda/js/arrayproductos.js"></script>
-    <script src="./tienda/js/carrito.js"></script>
-    <script src="./tienda/js/productosregistro.js"></script>
+    <script src="../tienda/js/arrayproductos.js"></script>
+    <script src="../tienda/js/tienda.js"></script>
+    <script src="../tienda/js/abrircarrito.js"></script>
+    <script src="../tienda/js/carrito.js"></script>
 
 
 
