@@ -47,14 +47,10 @@
               <li class="nav-item">
                 <a class="nav-link text-dark" href="./Contacto.html">Contacto</a>
               </li>
-              <a href="./carrito.html">
-                <div class="carrito">
-                  <i class="fas fa-bag-shopping"></i>
-                  <div id="contador">
-                    <p>0</p>
-                  </div>
-                </div>
-              </a>
+              <button id="boton-carrito">
+                <i class="fas fa-bag-shopping"></i>
+                <span id="contadorCarrito">0</span>
+              </button>
             </ul>
           </div>  
       </nav>
@@ -85,7 +81,7 @@
             <div class="input-field abajo provincia">
                 <i class="fas fa-map-marked-alt material-icons prefix "></i>
                 <label for="Provincia">Provincia<span class="complete">*</span> </label>
-                <div class="provinciaCheck"></div>
+                <input type="text" name="Provincia" required>
           </div>
           <div class="input-field abajo localidad ">
                 <i class="fas fa-search-location material-icons prefix "></i>
@@ -178,7 +174,11 @@
       </div>
   </footer>
 
-
+  <script src="../tienda/js/forms.js"></script>
+  <script src="../tienda/js/arrayproductos.js"></script>
+  <script src="../tienda/js/tienda.js"></script>
+  <script src="../tienda/js/abrircarrito.js"></script>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -189,10 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
-    <script src="./index.js"></script>
-    <script src="./tienda/js/arrayproductos.js"></script>
-    <script src="./tienda/js/carrito.js"></script>
-    <script src="./tienda/js/productosregistro.js"></script>
+    
 
 
 </body>

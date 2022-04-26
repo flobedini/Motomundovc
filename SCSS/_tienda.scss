@@ -1,6 +1,16 @@
 
 @import "./Variables";
 
+#search{
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 //Carrito
 
 button#boton-carrito{
@@ -200,6 +210,10 @@ button.ver__carrito:hover{
     outline: none;
 }
 
+.img--carrito{
+    height: 55px;
+}
+
   //Fin carrito emergente
 
 
@@ -224,13 +238,33 @@ button.ver__carrito:hover{
         margin-left: 20px;
     }
 
+
+    #search{
+        display: none;
+    }
+
+    section#container--productos{
+        margin-top: 370px;
+    }
+
+    #collapsibleNavbar{
+        justify-content: flex-end;
+
+    }
+
 }
-
-
 
 @media only screen and (min-width:768px){
 
     .carrito__movil{
         display: none;
+    }
+
+    section#container--productos{
+        margin-top: 80px;
+    }
+
+    div.categ p{
+        margin-left: 10px;
     }
 }

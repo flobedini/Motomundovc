@@ -12,7 +12,7 @@ const precioTotal = document.getElementById('precioTotal');
 const selecTalles = document.getElementById('selecTalles')
 const buscador = document.getElementById('search')
 
-
+const categoria = document.getElementsByClassName('.select--categoria')
 
 //filtro
 /* selecTalles.addEventListener('change',()=>{
@@ -26,7 +26,12 @@ const buscador = document.getElementById('search')
 //Buscador
 
 
+
 mostrarProductos(stockProductos)
+
+
+//Creando cards de productos
+
 
 function mostrarProductos(array){
     contenedorProductos.innerHTML= ""
@@ -62,7 +67,7 @@ function mostrarProductos(array){
     let yaEsta = carritoDeCompras.find(item=> item.id == id)
     if(yaEsta){
         yaEsta.cantidad = yaEsta.cantidad + 1
-        document.getElementById(`und${yaEsta.id}`).innerHTML =` <p id=und${yaEsta.id}>Und:${yaEsta.cantidad}</p>`
+        document.getElementById(`und${yaEsta.id}`).innerHTML =` <p id=und${yaEsta.id}>Cant: ${yaEsta.cantidad}</p>`
         actualizarCarrito()
     }else{
         let productoAgregar = stockProductos.find(elemento => elemento.id == id)
@@ -82,16 +87,18 @@ function mostrarProductos(array){
 
 
 
-
+//Creando la funcion de carrito
 
 function mostrarCarrito(productoAgregar) {
 
     let div = document.createElement('div')
     div.className = 'productoEnCarrito'
     div.innerHTML=`
+                    <img src="${productoAgregar.img}" class="img--carrito">
+                    <p>${productoAgregar.marca}</p>
                     <p>${productoAgregar.nombre}</p>
-                    <p>Precio: $${productoAgregar.precio}</p>
-                    <p id="und${productoAgregar.id}">Und:${productoAgregar.cantidad}</p>
+                    <p>$${productoAgregar.precio}</p>
+                    <p id="und${productoAgregar.id}">Cant: ${productoAgregar.cantidad}</p>
                     <button id="eliminar${productoAgregar.id}" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
     `
     contenedorCarrito.appendChild(div)
@@ -106,7 +113,7 @@ function mostrarCarrito(productoAgregar) {
             localStorage.setItem('carrito', JSON.stringify(carritoDeCompras))
         }else{
             productoAgregar.cantidad = productoAgregar.cantidad - 1
-            document.getElementById(`und${productoAgregar.id}`).innerHTML =` <p id=und${productoAgregar.id}>Und:${productoAgregar.cantidad}</p>`
+            document.getElementById(`und${productoAgregar.id}`).innerHTML =` <p id=und${productoAgregar.id}>Cant: ${productoAgregar.cantidad}</p>`
             actualizarCarrito()
             localStorage.setItem('carrito', JSON.stringify(carritoDeCompras))
             }

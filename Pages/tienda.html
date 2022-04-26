@@ -28,11 +28,6 @@
 <body>
 
   <header>
-    <a href="./carrito.html">
-      <div class="carrito__movil" id="movil--cart">
-        <i class="fas fa-bag-shopping"></i>
-      </div>
-    </a>
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" id="navbar">
         <a class="navbar-brand" href="../index.html">
         <img class="logo--web" src="../Assets/img/Motomundo.svg" alt="logo" style="height: 46px;">
@@ -53,12 +48,13 @@
               <li class="nav-item">
                 <a class="nav-link text-dark" href="./Contacto.html">Contacto</a>
               </li>
-              <button id="boton-carrito">
+              
+            </ul>
+          </div> 
+          <button id="boton-carrito">
                 <i class="fas fa-bag-shopping"></i>
                 <span id="contadorCarrito">0</span>
               </button>
-            </ul>
-          </div>  
       </nav>
   </header>
 
@@ -77,10 +73,11 @@
           </div>
           <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
           <div id="terminar" style="display: flex; justify-content: flex-end;"></div>
-          <a href="./carrito.html"><button class="ver__carrito">Ver</button></a>
+          <a href="./ingresodatos.html"><button class="ver__carrito">Finalizar compra</button></a>
       </div>
     </div>
 
+    
 
     <div class="select--categoria">
       <a class="categorias" href="./cascos.html">
@@ -159,6 +156,7 @@
     <script src="../tienda/js/arrayproductos.js"></script>
     <script src="../tienda/js/tienda.js"></script>
     <script src="../tienda/js/abrircarrito.js"></script>
+    <script src="../tienda/js/forms.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

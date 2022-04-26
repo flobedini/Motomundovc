@@ -66,8 +66,8 @@
 
     <div class="noHayProductos">
       <p>Agregue un producto para continuar</p>
-  </div>
-  <div class="container__carrito" id="section1">
+    </div>
+    <div class="container__carrito" id="section1">
       <div class="carrito__compras">
           <div class="carrito__productos">
           </div>
@@ -102,99 +102,6 @@
 
   <!-- Carrito Final -->
 
-  <!-- Forms inicio -->
-
-  <section class=" section2 container__form" id="section2">
-    <form id="ingresar--datos" name="datos" action="./finalizarcompra.html" >
-        <div class="input-field primer--dato">
-          <i class="fa-solid fa-user material-icons"></i>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" required>
-        </div>
-
-        <div class="input-field primer--dato">
-          <i class="fa-regular fa-user material-icons"></i>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" required>
-        </div>
-
-        <div class="input-field primer--dato">
-          <i class="fa-solid fa-envelope material-icons"></i>
-            <label for="email">Email</label>
-            <input type="email" name="email" required>
-        </div>
-
-        <div class="container1">
-          <div class="input-field abajo provincia">
-              <i class="fas fa-map-marked-alt material-icons prefix "></i>
-              <label for="Provincia">Provincia<span class="complete">*</span> </label>
-              <div class="provinciaCheck"></div>
-        </div>
-        <div class="input-field abajo localidad ">
-              <i class="fas fa-search-location material-icons prefix "></i>
-              <label for="Localidad">Localidad<span class="complete">*</span> </label>
-              <input type="text" name="Localidad" required>
-        </div>
-      </div>
-
-      <div class="container2">
-          <div class="input-field abajo calle">
-              <i class="fas fa-home material-icons prefix" ></i>
-              <label for="Calle">Calle <span class="complete">*</span> </label>
-              <input type="text" name="Calle" required>
-          </div>
-          <div class="input-field abajo numero">
-              <i class="fas fa-map-marker-alt material-icons prefix"></i>
-              <label for="Numero">Numero<span class="complete">*</span> </label>
-              <input type="text" name="Numero" required>
-          </div>
-      </div>
-
-      <div class="container3">
-          <div class="input-field abajo piso">
-              <i class="fas fa-map-marker material-icons prefix"></i>
-              <label for="Piso">Piso</label>
-              <input type="text" name="Piso" >
-          </div>
-
-          <div class="input-field abajo depto">
-              <i class="fas fa-map-marker material-icons prefix"></i>
-              <label for="Depto">Depto</label>
-              <input type="text" name="Depto" >
-          </div>
-      </div>
-
-      <div class="container4">
-          <div class="input-field abajo cp">
-              <i class="fas fa-location-arrow material-icons prefix"></i>
-              <label for="cp">Codigo Postal<span class="complete">*</span> </label>
-              <input type="text" name="cp" required>
-          </div>
-          <div class="input-field abajo tel">
-              <i class="fas fa-phone-alt material-icons prefix"></i>
-              <label for="telefono">Numero Telefonico<span class="complete">*</span> </label>
-              <input type="number" name="telefono" required>
-          </div>
-      </div>
-
-      <div class="container5">
-          <div class="input-field abajo observacion">
-              <i class="fas fa-comment-alt material-icons prefix"></i>
-              <label for="observacion">Observacion (Opcional)</label>
-              <input type="text" name="observacion" >
-          </div>
-      </div>
-
-      <div class="center-align">
-          <button class="enviar" >
-              <i class="fa-solid fa-paper-plane-top"></i>
-              <a href=""><span> Siguiente </span></a>
-          </button>
-      </div>
-    </form>
-  </section>
-
-<!-- Forms final -->
 
     <a href="https://api.whatsapp.com/send?phone=+5493400504701" class="btn-wsp" target="_blank">
     </i><i class="fab fa-whatsapp"></i></a>
@@ -221,7 +128,10 @@
       </div>
   </footer>
 
-
+    <script src="../tienda/js/arrayproductos.js"></script>
+    <script src="../tienda/js/tienda.js"></script>
+    <script src="../tienda/js/abrircarrito.js"></script>
+    <script src="../tienda/js/forms.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -232,10 +142,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
-    <script src="../tienda/js/arrayproductos.js"></script>
-    <script src="../tienda/js/tienda.js"></script>
-    <script src="../tienda/js/abrircarrito.js"></script>
-    <script src="../tienda/js/carrito.js"></script>
+
 
 
 

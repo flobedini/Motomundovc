@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-image: url(../tienda/imgtienda/carrito/fondo1.jpeg);
+    background-image: url(./../tienda/imgtienda/carrito/fondo1.jpeg);
     background-size: cover;
     background-position: right;
 }
@@ -73,17 +73,17 @@
     font-size: 30px;
 }
 
+
 .input-field input{
     margin-top: 1rem;
     border-top: none;
     border-left: none;
     border-right: none;
     outline: none;
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 2.2rem;
     background: none;
     width: 30rem;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .input-field input:hover{
