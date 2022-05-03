@@ -64,10 +64,10 @@ function mostrarProductos(array){
 
 
     function agregarAlCarrito(id) {
-    let yaEsta = carritoDeCompras.find(item=> item.id == id)
-    if(yaEsta){
-        yaEsta.cantidad = yaEsta.cantidad + 1
-        document.getElementById(`und${yaEsta.id}`).innerHTML =` <p id=und${yaEsta.id}>Cant: ${yaEsta.cantidad}</p>`
+    let carritoAgregar = carritoDeCompras.find(item=> item.id == id)
+    if(carritoAgregar){
+        carritoAgregar.cantidad = carritoAgregar.cantidad + 1
+        document.getElementById(`und${carritoAgregar.id}`).innerHTML =` <p id=und${carritoAgregar.id}>Cant: ${carritoAgregar.cantidad}</p>`
         actualizarCarrito()
     }else{
         let productoAgregar = stockProductos.find(elemento => elemento.id == id)
@@ -151,3 +151,12 @@ function recuperar() {
 
 recuperar()
 
+
+if (contenedorCarrito == null ){
+    document.querySelector(".ver__carrito")
+    button.addEventListener("click", function(){
+        swal({
+            icon: "error",
+        });
+    })
+}

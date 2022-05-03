@@ -3,14 +3,14 @@ let stockProductos = [
     
     //Seccion Cascos
 
-    {id: 1, nombre: "Rebatible", marca: "Hawk", tipo: "cascos", medida: "L", img: ".../assets/img/cascos/1.png", precio: 12000},
-    {id: 2, nombre: "Rebatible", marca: "Hawk", tipo: "cascos", medida: "L", img: ".../assets/img/cascos/2.png",precio: 12500},
-    {id: 3, nombre: "Rebatible", marca: "Hawk", tipo: "cascos", medida: "L", img: ".../assets/img/cascos/3.png",precio: 13000},
-    {id: 4, nombre: "Integral", marca: "MAC", tipo: "cascos", medida: "L", img: "./../assets/img/cascos/4.png",precio: 15000},
-    {id: 5, nombre: "Cross", marca: "Just 1", tipo: "cascos", medida: "L", img: "./../assets/img/cascos/5.png",precio: 27000},
-    {id: 6, nombre: "Cross", marca: "Just 1", tipo: "cascos", medida: "L", img: "./assets/img/cascos/6.png",precio: 28000},
-    {id: 7, nombre: "Integral", marca: "LS2", tipo: "cascos", medida: "L", img: "./assets/img/cascos/7.png",precio: 30000},
-    {id: 8, nombre: "Integral", marca: "LS2", tipo: "cascos", medida: "L", img: "./assets/img/cascos/8.png",precio: 20000},
+    {id: 1, nombre: "Rebatible", marca: "Hawk", tipo: "cascos", medida: "L", img: "../assets/img/cascos/1.png", precio: 12000},
+    {id: 2, nombre: "Rebatible", marca: "Hawk", tipo: "cascos", medida: "L", img: "../assets/img/cascos/2.png",precio: 12500},
+    {id: 3, nombre: "Rebatible", marca: "Hawk", tipo: "cascos", medida: "L", img: "../assets/img/cascos/3.png",precio: 13000},
+    {id: 4, nombre: "Integral", marca: "MAC", tipo: "cascos", medida: "L", img: "../assets/img/cascos/4.png",precio: 15000},
+    {id: 5, nombre: "Cross", marca: "Just 1", tipo: "cascos", medida: "L", img: "../assets/img/cascos/5.png",precio: 27000},
+    {id: 6, nombre: "Cross", marca: "Just 1", tipo: "cascos", medida: "L", img: "../assets/img/cascos/6.png",precio: 28000},
+    {id: 7, nombre: "Integral", marca: "LS2", tipo: "cascos", medida: "L", img: "../assets/img/cascos/7.png",precio: 30000},
+    {id: 8, nombre: "Integral", marca: "LS2", tipo: "cascos", medida: "L", img: "../assets/img/cascos/8.png",precio: 20000},
 
 
     //Seccion Indumentaria
